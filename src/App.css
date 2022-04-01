@@ -5,6 +5,79 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  position: fixed;
+}
+
+.home-background1 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  /* position: fixed; */
+  height: auto;
+  /* top: 0; */
+  z-index: -999;
+  overflow: hidden;
+}
+
+.home-background-image1 {
+  background-attachment: fixed;
+  background-image: url("./components/homeImage1dark.jpg");
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home-background-image2 {
+  background-attachment: fixed;
+  background-image: url("./components/homeimage2dark.jpeg");
+  min-height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.App-header {
+  /* min-height: 100vh; */
+  /* background-color: white; */
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  z-index: 10;
+}
+
+.App-header2 {
+  /* overflow: hidden; */
+  /* min-height: 100vh; */
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  z-index: 20;
+}
+
+.transparent-background {
+  background: transparent;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.Icons {
+  padding-top: 10px;
+  text-align: left;
+  font-size: 14px;
+  padding-left: 500px;
+  font-weight: normal;
+  color: maroon;
+}
+
+.Large-margin {
+  margin: 0 545px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,19 +86,132 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+h1 {
+  margin-bottom: 0;
+  font-size: 40px;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+p {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.Body {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
+}
+
+.image-left {
+  float: left;
+  padding-left: 500px;
+  width: 25%;
+  align-items: left;
+  margin-right: 15px;
+}
+
+.Body-left {
+  display: block;
+  text-align: left;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+}
+
+.Header-maroon {
+  color: maroon;
+}
+
+div {
+  display: block;
+}
+
+.white-header {
   color: white;
+  filter: brightness(100%);
+}
+
+.white-header2 {
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: normal;
+  color: rgb(233, 233, 233);
+}
+
+.white-p {
+  font-size: 15px;
+  font-weight: normal;
+  color: white;
+}
+
+.text-header1 {
+  margin-bottom: 0;
+  font-size: 40px;
+  color: rgb(61, 61, 61);
+}
+
+.text-header2 {
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: normal;
+  color: rgb(85, 85, 85);
+}
+
+.text-header3 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: normal;
+  color: rgb(141, 28, 28);
+}
+
+.text-p {
+  font-size: 15px;
+  font-weight: normal;
+  color: black;
+}
+
+ul.b {
+  font-weight: bolder;
+  list-style-type: square;
+  list-style-position: inside;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+.Background-Grey-EmergencyServices {
+  padding-top: 100px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  padding-bottom: 100px;
+  height: 650px;
+  z-index: 0;
+}
+
+.Full-logo {
+  padding: 50px;
+  width: 15%;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright {
+  padding: 50px;
+  text-align: left;
+  font-size: 8px;
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +221,99 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  box-shadow: 0px 5px 8px lightgrey;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button:active {
+  background-color: maroon;
+}
+
+.tab button:selected {
+  background-color: maroon;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.button {
+  background-color: maroon; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: maroon;
+  color: white;
+  border: 2px solid maroon;
+  border-radius: 4px;
+}
+
+.button1:hover {
+  background-color: white;
+  color: maroon;
+}
+
+.button2 {
+  background-color: white;
+  color: maroon;
+  border: 2px solid white;
+  border-radius: 4px;
+}
+
+.button2:hover {
+  background-color: maroon;
+  color: white;
+  border: 2px solid maroon;
+}
+
+.button3 {
+  border: transparent;
+  background-color: transparent;
+  color: maroon;
+}
+
+.button3:hover {
+  cursor: pointer;
+}
+
+.footer {
+  padding: 10px;
+  background-color: white;
 }

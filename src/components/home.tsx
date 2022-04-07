@@ -171,6 +171,7 @@ function Home() {
               </div>
             </div>
           </div>
+          <div>This is beyond fucking stupid</div>
           <div>
             <header className="App-header">
               <h1 className="Header-maroon">

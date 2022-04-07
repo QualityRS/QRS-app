@@ -1,4 +1,6 @@
 import homeSideImage from "./homeSideImage.jpeg";
+// import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 const contactURL = () => {
   window.open(
@@ -6,6 +8,50 @@ const contactURL = () => {
     "_self"
   );
 };
+
+export const reviews = [
+  {
+    source: "https://live.staticflickr.com/65535/51987065508_d384769e66_k.jpg",
+    src: "https://live.staticflickr.com/65535/51987065508_d384769e66_k.jpg",
+    width: 3,
+    height: 4,
+    title: "Shed Demo Before",
+  },
+  {
+    source: "https://live.staticflickr.com/65535/51985996242_6fa8e4afcb_b.jpg",
+    src: "https://live.staticflickr.com/65535/51985996242_6fa8e4afcb_b.jpg",
+    width: 3,
+    height: 4,
+    title: "Shed Demo 2",
+  },
+  {
+    source: "https://live.staticflickr.com/65535/51987065438_8322962779_b.jpg",
+    src: "https://live.staticflickr.com/65535/51987065438_8322962779_b.jpg",
+    width: 3,
+    height: 4,
+    title: "Shed Demo 3",
+  },
+];
+
+// const responsive = {
+//   desktop: {
+//     breakpoint: { max: 3000, min: 1024 },
+//     items: 3,
+//     paritialVisibilityGutter: 60,
+//   },
+//   tablet: {
+//     breakpoint: { max: 1024, min: 464 },
+//     items: 2,
+//     paritialVisibilityGutter: 50,
+//   },
+//   mobile: {
+//     breakpoint: { max: 464, min: 0 },
+//     items: 1,
+//     paritialVisibilityGutter: 30,
+//   },
+// };
+
+//
 
 function Home() {
   return (
@@ -15,6 +61,7 @@ function Home() {
           <div className="home-background-image1">
             <div className="transparent-background">
               <header className="white-header">
+                <title>{"PITTSBURGH'S FINEST LIGHT DEMOLITION COMPANY"}</title>
                 <h1>PITTSBURGH'S FINEST LIGHT DEMOLITION COMPANY</h1>
                 <h2>SERVICING WASHINGTON & ALLEGHENY COUNTIES</h2>
                 <h3>Licensed & Insured</h3>
@@ -30,7 +77,9 @@ function Home() {
           </div>
           <div>
             <header className="App-header">
-              <h1 className="Header-maroon">GET YOUR HOME RENOVATION-READY</h1>
+              <h1 className="Header-maroon">
+                GET YOUR PROPERTY RENOVATION-READY
+              </h1>
               <h2>CONNECT WITH OUR DEMOLITION COMPANY</h2>
               <p>
                 Are you ready to start the remodeling project you've been
@@ -38,8 +87,7 @@ function Home() {
                 services with Quality Removal
                 <br />
                 Services in Washington County, PA. Our locally owned and
-                operated demolition company provides reliable demolition and
-                hauling services.
+                operated demolition company provides reliable demolition
                 <br />
                 <br />
                 Let us help clear space inside or outside your property so you
@@ -52,12 +100,9 @@ function Home() {
           <div className="home-background-image2">
             <div className="transparent-background">
               <header className="white-header">
-                <h1>
-                  TRUST THE PROFESSIONALS TO TRANSPORT THE HEAVY <br /> STUFF
-                </h1>
+                <h1>GET A FREE ESTIMATE</h1>
                 <h2>
-                  USE OUR HAULING SERVICES TO GET CONSTRUCTION EQUIPMENT TO YOUR
-                  WORK SITE
+                  YOU MAY ALSO CONTACT US WITH ANY QUESTIONS YOU MAY HAVE!
                 </h2>
               </header>
               <br />
@@ -70,7 +115,16 @@ function Home() {
               </button>
             </div>
           </div>
-
+          {/* <div>
+            <Carousel responsive={responsive}>
+              <div>
+                <p className="legend">Legend 1</p>
+              </div>
+              <div>
+                <p className="legend">Legend 2</p>
+              </div>
+            </Carousel>
+          </div> */}
           <div className="Background-Grey-EmergencyServices">
             <div>
               <img
@@ -100,7 +154,6 @@ function Home() {
                 <ul className="b">
                   <li>Interior demolition services</li>
                   <li>Exterior demolition services</li>
-                  <li>Hauling services</li>
                 </ul>
                 <br />
                 Contact us right away to get started.
@@ -126,7 +179,7 @@ function Home() {
               <h2>CONNECT WITH OUR DEMOLITION COMPANY</h2>
               <p>
                 Starting a new remodeling project can be stressful enough. Keep
-                it easy and choose us for your demolition and hauling services.
+                it easy and choose us for your demolition.
                 <br />
                 We have over 10 years of experience in the industry, so you can
                 trust us to do the job right.

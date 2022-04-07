@@ -6,7 +6,6 @@ import fullLogo from "./qrsLogoFull.png";
 import Home from "./components/home";
 import InteriorDemo from "./components/interior-demolition";
 import ExteriorDemo from "./components/exterior-demolition";
-import Hauling from "./components/hauling";
 import Gallery from "./components/gallery";
 import Reviews from "./components/reviews";
 import EmergencyService from "./components/emergency-service";
@@ -95,31 +94,16 @@ function App() {
               EXTERIOR DEMOLITION
             </button>
           </Link>
-          <Link to="hauling">
-            <button className="tablinks" id="hauling">
-              HAULING
-            </button>
-          </Link>
           <Link to="gallery">
             <button className="tablinks" id="gallery">
               GALLERY
             </button>
           </Link>
-
           <Link to="reviews">
             <button className="tablinks" id="reviews">
               REVIEWS
             </button>
           </Link>
-
-          {/* <Link to="contact-us">
-            <button
-              className="tablinks"
-              id="contact-us"
-            >
-              CONTACT US
-            </button>
-          </Link> */}
         </div>
 
         <Routes>
@@ -127,17 +111,18 @@ function App() {
           <Route path="/emergency-service" element={<EmergencyService />} />
           <Route path="/interior-demolition" element={<InteriorDemo />} />
           <Route path="/exterior-demolition" element={<ExteriorDemo />} />
-          <Route path="/hauling" element={<Hauling />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/reviews" element={<Reviews />} />
-          {/* <Route path="/contact-us" element={<Contact />} /> */}
         </Routes>
       </div>
       <div className="footer">
-        <div className="copyright">
-          Copyright © 2022 Quality Removal Services, all rights reserved.
-          <br />
-          Eighty Four, PA 15330 (724) 255-1333
+        <div className="hours">
+          <p className="hours-header">HOURS:</p>
+          <p className="hours-text">Monday-Saturday: 9 AM - 5PM</p>
+          <p className="copyright">
+            Copyright © 2022 Quality Removal Services, all rights reserved.
+            Eighty Four, PA 15330 (724) 255-1333
+          </p>
         </div>
       </div>
     </Router>

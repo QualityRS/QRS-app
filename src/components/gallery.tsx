@@ -1,20 +1,12 @@
-import React from "react";
+import Picture from "./picture";
 
-// const contactURL = () => {
-//   window.open(
-//     "https://go.thryv.com/site/6fxhrqsm3ixnu4f1/activity/dashboard",
-//     "_self"
-//   );
-// };
 function Gallery() {
   return (
-    <>
-      <div>
-        <header className="App-header">
-          <h1 className="Header-maroon">WE DONT HAVE PICTURES</h1>
-        </header>
+    <div className="App" style={{ overflow: "auto" }}>
+      <div style={{ whiteSpace: "nowrap" }}>
+        <Picture />
       </div>
-    </>
+    </div>
   );
 }
 

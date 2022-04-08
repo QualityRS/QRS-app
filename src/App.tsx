@@ -10,12 +10,12 @@ import Gallery from "./components/gallery";
 import Reviews from "./components/reviews";
 import EmergencyService from "./components/emergency-service";
 import {
-  FaPhoneAlt,
   FaInstagram,
   FaFacebookSquare,
   FaGoogle,
   FaPrint,
   FaEnvelope,
+  FaPhoneAlt,
 } from "react-icons/fa";
 
 const facebookLink = () => {
@@ -46,33 +46,32 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <div>
-          <h1 className="Icons">
-            <FaPhoneAlt /> &nbsp; (724) 225-1333 Call Now!
-            <span className="Large-margin">
-              <button className="button3" onClick={facebookLink}>
-                <FaFacebookSquare />
-              </button>
-              <button className="button3" onClick={instagramLink}>
-                <FaInstagram />{" "}
-              </button>
-              <button className="button3" onClick={googleLink}>
-                <FaGoogle />
-              </button>
-              <button className="button3" onClick={contactURL}>
-                <FaEnvelope />
-              </button>
-              <button className="button3" onClick={printURL}>
-                <FaPrint />
-              </button>
-            </span>
-          </h1>
-        </div>
         <img
           className="Full-logo"
           src={fullLogo}
           alt="qualityRemovalServices"
         />
+        <div>
+          <FaPhoneAlt className="button4" size="13" /> &nbsp; (724) 225-1333
+          Call Now!
+          {/* <span className="Large-margin"> */}
+          <button className="button3" onClick={facebookLink}>
+            <FaFacebookSquare />
+          </button>
+          <button className="button3" onClick={instagramLink}>
+            <FaInstagram />{" "}
+          </button>
+          <button className="button3" onClick={googleLink}>
+            <FaGoogle />
+          </button>
+          <button className="button3" onClick={contactURL}>
+            <FaEnvelope />
+          </button>
+          <button className="button3" onClick={printURL}>
+            <FaPrint />
+          </button>
+          {/* </span> */}
+        </div>
         <div className="tab">
           <Link to="/">
             <button className="tablinks" id="home">

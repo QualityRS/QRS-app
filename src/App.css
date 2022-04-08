@@ -21,7 +21,7 @@
 
 .home-background-image1 {
   background-attachment: fixed;
-  background-image: url("./components/homeImage1dark.jpg");
+  background-image: url("./components/homeImage1dark.jpeg");
   min-height: 500px;
   background-position: center;
   background-repeat: no-repeat;
@@ -74,6 +74,7 @@
   padding-left: 500px;
   font-weight: normal;
   color: maroon;
+  overflow: hidden;
 }
 
 .Large-margin {
@@ -324,6 +325,13 @@ ul.b {
   border: transparent;
   background-color: transparent;
   color: maroon;
+}
+
+.button4 {
+  border: transparent;
+  background-color: transparent;
+  color: maroon;
+  font-size-adjust: 1;
 }
 
 .button3:hover {

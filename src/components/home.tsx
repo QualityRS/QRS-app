@@ -1,5 +1,5 @@
 import homeSideImage from "./homeSideImage.jpeg";
-// import Carousel from "react-multi-carousel";
+import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const contactURL = () => {
@@ -33,25 +33,27 @@ export const reviews = [
   },
 ];
 
-// const responsive = {
-//   desktop: {
-//     breakpoint: { max: 3000, min: 1024 },
-//     items: 3,
-//     paritialVisibilityGutter: 60,
-//   },
-//   tablet: {
-//     breakpoint: { max: 1024, min: 464 },
-//     items: 2,
-//     paritialVisibilityGutter: 50,
-//   },
-//   mobile: {
-//     breakpoint: { max: 464, min: 0 },
-//     items: 1,
-//     paritialVisibilityGutter: 30,
-//   },
-// };
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+    paritialVisibilityGutter: 50,
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    paritialVisibilityGutter: 50,
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    paritialVisibilityGutter: 30,
+  },
+};
 
 //
+
+// require("react-carousel/lib/carousel.css");
 
 function Home() {
   return (
@@ -63,8 +65,8 @@ function Home() {
               <header className="white-header">
                 <title>{"PITTSBURGH'S FINEST LIGHT DEMOLITION COMPANY"}</title>
                 <h1>PITTSBURGH'S FINEST LIGHT DEMOLITION COMPANY</h1>
-                <h2>SERVICING WASHINGTON & ALLEGHENY COUNTIES</h2>
-                <h3>Licensed & Insured</h3>
+                {/* <h2>SERVICING WASHINGTON & ALLEGHENY COUNTIES</h2>
+                <h3>Licensed & Insured</h3> */}
               </header>
               <button
                 className="button button2"
@@ -80,7 +82,7 @@ function Home() {
               <h1 className="Header-maroon">
                 GET YOUR PROPERTY RENOVATION-READY
               </h1>
-              <h2>CONNECT WITH OUR DEMOLITION COMPANY</h2>
+              {/* <h2>CONNECT WITH OUR DEMOLITION COMPANY</h2> */}
               <p>
                 Are you ready to start the remodeling project you've been
                 dreaming of? Take the first step by scheduling demolition
@@ -115,16 +117,35 @@ function Home() {
               </button>
             </div>
           </div>
-          {/* <div>
-            <Carousel responsive={responsive}>
-              <div>
-                <p className="legend">Legend 1</p>
+          <h1 className="Header-maroon">REVIEWS</h1>
+          <div className="reviews">
+            <Carousel
+              responsive={responsive}
+              showDots={true}
+              autoPlay
+              centerMode
+              infinite
+              arrows
+              focusOnSelect={true}
+              removeArrowOnDeviceType={["tablet", "mobile"]}
+            >
+              <div className="reviews-paddingbottom">
+                <text className="italics">
+                  They, did a very nice job! He showed up on time, very, neat,
+                  organized, and professional. I would highly recommend Quality
+                  Removal Services to all my family and friends.
+                </text>
+                <p className="reviews-names">Domenic P.</p>
               </div>
-              <div>
-                <p className="legend">Legend 2</p>
-              </div>
+              <div>Item 2</div>
+              <div>Item 3</div>
+              <div>Item 4</div>
+              <div>Item 1</div>
+              <div>Item 2</div>
+              <div>Item 3</div>
+              <div>Item 4</div>
             </Carousel>
-          </div> */}
+          </div>
           <div className="Background-Grey-EmergencyServices">
             <div>
               <img

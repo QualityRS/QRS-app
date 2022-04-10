@@ -110,6 +110,31 @@ p {
   font-weight: normal;
 }
 
+.reviews-paddingbottom {
+  padding-bottom: 50px;
+}
+
+.italics {
+  font-style: italic;
+}
+
+.reviews {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.reviews-header {
+  color: maroon;
+  padding-bottom: 50px;
+  font-size: 20px;
+}
+
+.reviews-names {
+  color: maroon;
+  font-weight: bold;
+  font-style: italic;
+}
+
 .Body {
   min-height: 100vh;
   font-size: calc(10px + 2vmin);

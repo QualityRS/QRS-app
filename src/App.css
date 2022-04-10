@@ -151,6 +151,7 @@ p {
 }
 
 .Body-left {
+  float: left;
   display: block;
   text-align: left;
   min-height: 100vh;

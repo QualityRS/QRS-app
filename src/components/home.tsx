@@ -122,7 +122,7 @@ function Home() {
             <Carousel
               responsive={responsive}
               showDots={true}
-              autoPlay
+              autoPlay={true}
               centerMode
               infinite
               arrows={false}

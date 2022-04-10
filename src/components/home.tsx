@@ -103,9 +103,7 @@ function Home() {
             <div className="transparent-background">
               <header className="white-header">
                 <h1>GET A FREE ESTIMATE</h1>
-                <h2>
-                  YOU MAY ALSO CONTACT US WITH ANY QUESTIONS YOU MAY HAVE!
-                </h2>
+                <h2>PLEASE CONTACT US WITH ANY QUESTIONS YOU MAY HAVE!</h2>
               </header>
               <br />
               <button
@@ -190,14 +188,13 @@ function Home() {
             </Carousel>
           </div>
           <div className="Background-Grey-EmergencyServices">
-            <div>
+            <div></div>
+            <div className="Body-left">
               <img
                 className="image-left"
                 src={homeSideImage}
                 alt="homeSideImage"
               />
-            </div>
-            <div className="Body-left">
               <div className="text-header2 ">
                 Find reliable services to get
                 <br />

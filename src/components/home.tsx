@@ -117,7 +117,7 @@ function Home() {
               </button>
             </div>
           </div>
-          <h1 className="Header-maroon">REVIEWS</h1>
+          <h1 className="Header-maroon">Reviews</h1>
           <div className="reviews">
             <Carousel
               responsive={responsive}
@@ -125,7 +125,7 @@ function Home() {
               autoPlay
               centerMode
               infinite
-              arrows
+              arrows={false}
               focusOnSelect={true}
               removeArrowOnDeviceType={["tablet", "mobile"]}
             >
@@ -137,13 +137,56 @@ function Home() {
                 </text>
                 <p className="reviews-names">Domenic P.</p>
               </div>
-              <div>Item 2</div>
-              <div>Item 3</div>
-              <div>Item 4</div>
-              <div>Item 1</div>
-              <div>Item 2</div>
-              <div>Item 3</div>
-              <div>Item 4</div>
+              <div className="reviews-paddingbottom">
+                <text className="italics">
+                  Answered my request in a timely manor. Showed up when stated
+                  and offered a fair quote for the task. Once I accepted the
+                  quote they completed the job quickly.
+                </text>
+                <p className="reviews-names">Donald H.</p>
+              </div>
+              <div className="reviews-paddingbottom">
+                <text className="italics">
+                  On time, professional, got the job done quickly would
+                  recommend. In fact I have already recommended them to my
+                  family.
+                </text>
+                <p className="reviews-names">Norma J.</p>
+              </div>
+              <div className="reviews-paddingbottom">
+                <text className="italics">
+                  I hired Quality Removal Services after they responded quickly
+                  to me and gave me an excellent bid. I will definitely use
+                  Quality Removal Services again.
+                </text>
+                <p className="reviews-names">Jamie P.</p>
+              </div>
+              <div className="reviews-paddingbottom">
+                <text className="italics">
+                  Zach was quick to respond, professional, reasonably priced and
+                  did great work. Highly recommend.
+                </text>
+                <p className="reviews-names">Sam D.</p>
+              </div>
+              <div className="reviews-paddingbottom">
+                <text className="italics">
+                  Zach was amazing from start to finish! He responded quickly to
+                  my inquiry and went above and beyond to accommodate my
+                  schedule. Zach and Ron did an amazing job. Excellent service
+                  at a very reasonable price!! Would definitely recommend and
+                  will use them again when I have a need.
+                </text>
+                <p className="reviews-names">Danielle R.</p>
+              </div>
+              <div className="reviews-paddingbottom">
+                <text className="italics">
+                  Zach did an amazing job removing and hauling away a
+                  non-functional sunroom to turn it into a patio space for us.
+                  He was exceptionally professional and tidy. Very highly
+                  recommended!!!
+                </text>
+                <p className="reviews-names">Emily D.</p>
+              </div>
             </Carousel>
           </div>
           <div className="Background-Grey-EmergencyServices">
@@ -192,7 +235,6 @@ function Home() {
               </div>
             </div>
           </div>
-          <div>This is beyond fucking stupid</div>
           <div>
             <header className="App-header">
               <h1 className="Header-maroon">

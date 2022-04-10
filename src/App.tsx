@@ -7,7 +7,6 @@ import Home from "./components/home";
 import InteriorDemo from "./components/interior-demolition";
 import ExteriorDemo from "./components/exterior-demolition";
 import Gallery from "./components/gallery";
-import Reviews from "./components/reviews";
 import EmergencyService from "./components/emergency-service";
 import {
   FaInstagram,
@@ -98,11 +97,6 @@ function App() {
               GALLERY
             </button>
           </Link>
-          <Link to="reviews">
-            <button className="tablinks" id="reviews">
-              REVIEWS
-            </button>
-          </Link>
         </div>
 
         <Routes>
@@ -111,7 +105,6 @@ function App() {
           <Route path="/interior-demolition" element={<InteriorDemo />} />
           <Route path="/exterior-demolition" element={<ExteriorDemo />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/reviews" element={<Reviews />} />
         </Routes>
       </div>
       <div className="footer">

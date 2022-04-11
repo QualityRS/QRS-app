@@ -144,10 +144,16 @@ p {
 
 .image-left {
   float: left;
-  padding-left: 25%;
+  padding-left: 500px;
   width: 25%;
   align-items: left;
   margin-right: 15px;
+}
+
+@media (max-width: 629px) {
+  img#optionalstuff {
+    display: none;
+  }
 }
 
 .Body-left {

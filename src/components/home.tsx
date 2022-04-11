@@ -65,8 +65,8 @@ function Home() {
               <header className="white-header">
                 <title>{"PITTSBURGH'S FINEST LIGHT DEMOLITION COMPANY"}</title>
                 <h1>PITTSBURGH'S FINEST LIGHT DEMOLITION COMPANY</h1>
-                {/* <h2>SERVICING WASHINGTON & ALLEGHENY COUNTIES</h2>
-                <h3>Licensed & Insured</h3> */}
+                <h2>SERVICING WASHINGTON & ALLEGHENY COUNTIES</h2>
+                <h3>Licensed & Insured</h3>
               </header>
               <button
                 className="button button2"
@@ -192,6 +192,7 @@ function Home() {
             <div className="Body-left">
               <img
                 className="image-left"
+                id="optionalstuff"
                 src={homeSideImage}
                 alt="homeSideImage"
               />

@@ -21,7 +21,7 @@
 
 .home-background-image1 {
   background-attachment: fixed;
-  background-image: url("./components/homeImage1dark.jpeg");
+  background-image: url("./components/homeImage1DarkV2.jpg");
   min-height: 500px;
   background-position: center;
   background-repeat: repeat;
@@ -29,11 +29,36 @@
 
 .home-background-image2 {
   background-attachment: fixed;
-  background-image: url("./components/homeimage2dark.jpeg");
+  background-image: url("./components/homeImage2DarkV2.jpg");
   min-height: 500px;
   background-position: center;
   background-repeat: no-repeat;
 }
+
+.interior-background-image1 {
+  background-attachment: fixed;
+  background-image: url("./components/interiordemoDark.jpg");
+  min-height: 500px;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.exterior-background-image1 {
+  background-attachment: fixed;
+  background-image: url("./components/exteriordemoDark.jpg");
+  min-height: 500px;
+  background-position: center;
+  background-repeat: repeat;
+}
+
+.emergency-background-image1 {
+  background-attachment: fixed;
+  background-image: url("./components/emergencyimageDark.jpg");
+  min-height: 500px;
+  background-position: center;
+  background-repeat: repeat;
+}
+
 .App-header {
   /* min-height: 100vh; */
   /* background-color: white; */
@@ -58,6 +83,20 @@
   align-items: center;
   font-size: calc(10px + 2vmin);
   z-index: 20;
+}
+
+.App-header-grey {
+  border: 1px solid #ccc;
+  /* background-color: #f1f1f1; */
+  background-color: #f1f1f1;
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  z-index: 10;
 }
 
 .transparent-background {

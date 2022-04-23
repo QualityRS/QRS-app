@@ -1,4 +1,3 @@
-import homeSideImage from "./homeSideImage.jpeg";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -8,30 +7,6 @@ const contactURL = () => {
     "_self"
   );
 };
-
-export const reviews = [
-  {
-    source: "https://live.staticflickr.com/65535/51987065508_d384769e66_k.jpg",
-    src: "https://live.staticflickr.com/65535/51987065508_d384769e66_k.jpg",
-    width: 3,
-    height: 4,
-    title: "Shed Demo Before",
-  },
-  {
-    source: "https://live.staticflickr.com/65535/51985996242_6fa8e4afcb_b.jpg",
-    src: "https://live.staticflickr.com/65535/51985996242_6fa8e4afcb_b.jpg",
-    width: 3,
-    height: 4,
-    title: "Shed Demo 2",
-  },
-  {
-    source: "https://live.staticflickr.com/65535/51987065438_8322962779_b.jpg",
-    src: "https://live.staticflickr.com/65535/51987065438_8322962779_b.jpg",
-    width: 3,
-    height: 4,
-    title: "Shed Demo 3",
-  },
-];
 
 const responsive = {
   desktop: {
@@ -50,10 +25,6 @@ const responsive = {
     paritialVisibilityGutter: 30,
   },
 };
-
-//
-
-// require("react-carousel/lib/carousel.css");
 
 function Home() {
   return (
@@ -82,7 +53,6 @@ function Home() {
               <h1 className="Header-maroon">
                 GET YOUR PROPERTY RENOVATION-READY
               </h1>
-              {/* <h2>CONNECT WITH OUR DEMOLITION COMPANY</h2> */}
               <p>
                 Are you ready to start the remodeling project you've been
                 dreaming of? Take the first step by scheduling demolition
@@ -103,7 +73,7 @@ function Home() {
             <div className="transparent-background">
               <header className="white-header">
                 <h1>GET A FREE ESTIMATE</h1>
-                <h2>PLEASE CONTACT US WITH ANY QUESTIONS YOU MAY HAVE!</h2>
+                <h2>CONNECT WITH OUR DEMOLITION COMPANY</h2>
               </header>
               <br />
               <button
@@ -114,6 +84,31 @@ function Home() {
                 CONTACT US
               </button>
             </div>
+          </div>
+          <div>
+            <header className="App-header-grey">
+              <h1 className="Header-maroon">
+                Why should you choose us for demolition services?
+              </h1>
+              <p>
+                Starting a new remodeling project can be stressful enough. Keep
+                it easy and choose us for your demolition.
+                <br />
+                We have over 10 years of experience in the industry, so you can
+                trust us to do the job right.
+                <br />
+                <br />
+                Book us for demolition services and enjoy:
+                <br />
+                <br />
+                <strong>Competitive pricing</strong>
+                <br />
+                <strong> Personable customer service</strong>
+                <br />
+                <strong>Flexible scheduling</strong>
+                <br />
+              </p>
+            </header>
           </div>
           <h1 className="Header-maroon">Reviews</h1>
           <div className="reviews">
@@ -186,78 +181,6 @@ function Home() {
                 <p className="reviews-names">Emily D.</p>
               </div>
             </Carousel>
-          </div>
-          <div className="Background-Grey-EmergencyServices">
-            <div></div>
-            <div className="Body-left">
-              <img
-                className="image-left"
-                id="optionalstuff"
-                src={homeSideImage}
-                alt="homeSideImage"
-              />
-              <div className="text-header2 ">
-                Find reliable services to get
-                <br />
-                your property construction-ready
-              </div>
-              <div className="text-p">
-                <br />
-                Don't worry about making way for your next remodel. Our
-                demolition company has it covered. We can clear out everything
-                <br />
-                from your kitchen to your shed, so you have a clean slate for
-                your next remodeling project.
-                <br />
-                <br />
-                Let us get your property construction-ready with our:
-                <br />
-                <br />
-                <ul className="b">
-                  <li>Interior demolition services</li>
-                  <li>Exterior demolition services</li>
-                </ul>
-                <br />
-                Contact us right away to get started.
-                <br />
-                <br />
-                <div>
-                  <button
-                    className="button button1"
-                    onClick={contactURL}
-                    id="contactbutton"
-                  >
-                    CONTACT US
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div>
-            <header className="App-header">
-              <h1 className="Header-maroon">
-                Why should you choose us for demolition services?
-              </h1>
-              <h2>CONNECT WITH OUR DEMOLITION COMPANY</h2>
-              <p>
-                Starting a new remodeling project can be stressful enough. Keep
-                it easy and choose us for your demolition.
-                <br />
-                We have over 10 years of experience in the industry, so you can
-                trust us to do the job right.
-                <br />
-                <br />
-                Book us for demolition services and enjoy:
-                <br />
-                <br />
-                <strong>Competitive pricing</strong>
-                <br />
-                <strong> Personable customer service</strong>
-                <br />
-                <strong>Flexible scheduling</strong>
-                <br />
-              </p>
-            </header>
           </div>
         </div>
       </div>

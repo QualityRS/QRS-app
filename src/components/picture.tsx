@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from "react";
+import { useCallback, useState } from "react";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import Gallery from "react-photo-gallery";
 
@@ -25,8 +25,8 @@ export const photos = [
     title: "Shed Demo 3",
   },
   {
-    source: "https://live.staticflickr.com/65535/51987291624_2addd86160_k.jpg",
-    src: "https://live.staticflickr.com/65535/51987291624_2addd86160_k.jpg",
+    source: "https://live.staticflickr.com/65535/51987291624_263faa013e_b.jpg",
+    src: "https://live.staticflickr.com/65535/51987291624_263faa013e_b.jpg",
     width: 3,
     height: 4,
     title: "Shed Demo After",

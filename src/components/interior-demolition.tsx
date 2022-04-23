@@ -16,6 +16,7 @@ function InteriorDemo() {
               <h1>RENOVATE ANY ROOM YOU WANT WITH US</h1>
               <h2>TAKE ADVANTAGE OF OUR HIGH-QUALITY HOUSE DEMO SERVICES</h2>
             </header>
+            <br />
             <button
               className="button button2"
               onClick={contactURL}

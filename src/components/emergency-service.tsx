@@ -19,7 +19,6 @@ function EmergencyService() {
                 RESIDENTS AND BUSINESSES HIRE US FOR EMERGENCY DEMO SERVICES
               </h3>
             </header>
-            <br />
             <button
               className="button button2"
               onClick={contactURL}

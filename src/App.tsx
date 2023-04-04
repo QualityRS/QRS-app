@@ -112,7 +112,7 @@ function App() {
           <p className="hours-text">Monday-Saturday: 9 AM - 5PM</p>
           <p className="copyright">
             Copyright © 2022 Quality Removal Services, all rights reserved.
-            Eighty Four, PA 15330 (724) 225-1333
+            Eighty Four, PA 15330 (724) 255-1333
           </p>
         </div>
       </div>

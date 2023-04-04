@@ -51,7 +51,7 @@ function App() {
           alt="qualityRemovalServices"
         />
         <div>
-          <FaPhoneAlt className="button4" size="12" /> (724) 225-1333 Call Now!
+          <FaPhoneAlt className="button4" size="12" /> (724) 255-1333 Call Now!
           {/* <span className="Large-margin"> */}
           <button className="button3" onClick={facebookLink}>
             <FaFacebookSquare />

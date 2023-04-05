@@ -39,13 +39,6 @@ function Home() {
                 <h2>SERVICING WASHINGTON & ALLEGHENY COUNTIES</h2>
                 <h3>Licensed & Insured</h3>
               </header>
-              <button
-                className="button button2"
-                onClick={contactURL}
-                id="contactbutton"
-              >
-                CONTACT US
-              </button>
             </div>
           </div>
           <div>
@@ -76,13 +69,6 @@ function Home() {
                 <h2>CONNECT WITH OUR DEMOLITION COMPANY</h2>
               </header>
               <br />
-              <button
-                className="button button2"
-                onClick={contactURL}
-                id="contactbutton"
-              >
-                CONTACT US
-              </button>
             </div>
           </div>
           <div>

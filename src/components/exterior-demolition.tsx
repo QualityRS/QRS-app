@@ -19,13 +19,6 @@ function ExteriorDemo() {
               </h2>
             </header>
             <br />
-            <button
-              className="button button2"
-              onClick={contactURL}
-              id="contactbutton"
-            >
-              CONTACT US
-            </button>
           </div>
         </div>
         <div>

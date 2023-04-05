@@ -17,13 +17,6 @@ function InteriorDemo() {
               <h2>TAKE ADVANTAGE OF OUR HIGH-QUALITY HOUSE DEMO SERVICES</h2>
             </header>
             <br />
-            <button
-              className="button button2"
-              onClick={contactURL}
-              id="contactbutton"
-            >
-              CONTACT US
-            </button>
           </div>
         </div>
         <div>
